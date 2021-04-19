@@ -19,10 +19,11 @@
       </div>
       <div class="header_nav">
         <ul class="nav_list">
-          <li class="nav_list-item"><a href="#" id="active" class="nav_list-item-link ">Home</a></li>
-          <li class="nav_list-item"><a href="#resume" class="nav_list-item-link">Resume</a></li>
-          <li class="nav_list-item"><a href="#objective" class="nav_list-item-link">Objective</a></li>
-          <li class="nav_list-item"><a href="#contact" class="nav_list-item-link">Contact</a></li>
+          <li id="nav_home" class="nav_list-item"><a href="#" class="nav_list-item-link ">Home</a></li>
+          <li id="nav_resume" class="nav_list-item"><a href="#resume" class="nav_list-item-link">Resume</a></li>
+          <li id="nav_objective" class="nav_list-item"><a href="#objective" class="nav_list-item-link">Objective</a>
+          </li>
+          <li id="nav_contact" class="nav_list-item"><a href="#contact" class="nav_list-item-link">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -36,6 +37,9 @@
 
         </div>
       </div>
+      <marquee class="slogan" behavior="scroll" direction="left" scrollamount='4'>"A journey of a thousand begins with
+        a
+        single step."</marquee>
     </div>
     <div class="cv_content">
       <div class="cv_resume">
@@ -137,20 +141,20 @@
       </div>
       <ul class="obj_list">
         <li class="obj_list-item">
-          Have a steady job after 3 years.
+          Having a steady job after 3 years.
         </li>
 
 
         <li class="obj_list-item">
-          Try to learning as much as possible and doing my best in order to accomplish my task.
+          Trying to learn as much as possible and do my best in order to accomplish my task.
         </li>
 
         <li class="obj_list-item">
-          Develop my skills with development of company.
+          Developing my skills with development of company.
         </li>
 
         <li class="obj_list-item">
-          To have good opportunities to get promotion in my job.
+          Having good opportunities to get promotion in my job.
         </li>
       </ul>
       <div class="content_section">
@@ -225,7 +229,30 @@
         document.getElementById("skill").style.color = "white";
         document.getElementById("other").style.color = "black";
       }
-
+      document.getElementById("nav_home").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#48dacb";
+        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
+      }
+      document.getElementById("nav_resume").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_resume").style.backgroundColor = "#48dacb";
+        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
+      }
+      document.getElementById("nav_objective").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_objective").style.backgroundColor = "#48dacb";
+        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
+      }
+      document.getElementById("nav_contact").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_contact").style.backgroundColor = "#48dacb";
+      }
     </script>
 </body>
 
