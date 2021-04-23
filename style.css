@@ -116,7 +116,7 @@ html{
   position: absolute;
   z-index: 1;
   bottom: 120px;
-  right: 240px;
+  right: 228px;
   width: 340px;
   height: 80px;
   text-align: center;
@@ -145,8 +145,9 @@ html{
   border-style: solid;
   border-color: transparent transparent #0cbfae transparent;
 }
-.avatar .my_comment h2{
-  margin-bottom: 8px;
+.avatar .my_comment .cmt-heading{
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 .content_section{
   
@@ -323,6 +324,8 @@ margin-left: 292px;
     right: -24px;
     display: none;
     width: 110px;
+    border-bottom-right-radius: 3px;
+
     
   }
   .nav_list-item{
@@ -386,8 +389,8 @@ margin-left: 292px;
   .avatar .my_comment {
     position: absolute;
     z-index: 1;
-    bottom: 120px;
-    right: 40px;
+    bottom: 140px;
+    right: 56px;
     width: 240px;
     height: 60px;
     text-align: center;
@@ -396,12 +399,13 @@ margin-left: 292px;
     color: #fff;
     border-radius: 80px;
 }
-.my_comment h2 {
+.avatar .my_comment .cmt-heading {
     font-size: 16px;
     margin-left: 4px;
     margin-top: 4px;
+    margin-bottom: 8px;
 }
-.my_comment h4{
+.my_comment .cmt-born{
   font-size: 14px;
 }
 .my_comment::after{
@@ -483,6 +487,8 @@ margin-left: 292px;
     right: -24px;
     display: none;
     width: 110px;
+  border-bottom-right-radius: 3px;
+
     
   }
   .nav_list-item{
@@ -534,14 +540,14 @@ margin-left: 292px;
     display: block;
   }
   .avatar_img{
-        width: 104px;
+    width: 104px;
     height: 104px;
-    left: 164px;
+    left: 140px;
   }
   .avatar .my_comment {
     position: absolute;
     z-index: 1;
-    bottom: 76px;
+    bottom: 86px;
     right: 6px;
     width: 164px;
     height: 48px;
@@ -552,20 +558,25 @@ margin-left: 292px;
     border-radius: 80px;
 }
 
-.my_comment h2 {
-    font-size: 12px;
+.avatar .my_comment .cmt-heading {
+    font-size: 11px;
     margin-left: 4px;
-    margin-top: 6px;
+    margin-top: 4px;
     margin-bottom: 6px;
 }
-.my_comment h4{
-  font-size: 11px;
+.my_comment .cmt-born{
+  font-size: 10px;
+  /* display: none; */
 }
 .my_comment::after{
-  border-width: 10px 12px;
+  border-color: transparent transparent transparent #0cbfae;
+  left: 10px;
+  bottom: -4px;
+  border-width: 6px 24px;
+  /* background-color: #fff; */
 }
 .slogan {
-    width: 334px;
+    width: 294px;
     left: 40px;
     font-size: 12px;
 }
@@ -575,12 +586,12 @@ margin-left: 292px;
     margin-bottom: 12px;
 }
 .resume_list{
-  margin-left: 0px;
+  margin-left: -4px;
   margin-right: -12px;
   padding-right: 8px;
 }
 .resume_list-item {
-    width: 114px;
+    width: 116px;
     font-size: 12px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -629,6 +640,7 @@ margin-left: 292px;
   width: 12px;
 }
 .contact-info{
+  font-size: 12px;
   width: 260px;
 }
 .footer {
