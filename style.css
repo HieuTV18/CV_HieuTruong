@@ -66,11 +66,14 @@ html{
   font-weight: 600;
   color: white;
   margin-right: -16px;
+  margin-left: 20px;
 
   
 }
 #nav_list-icon{
-  display: none;
+  display: flex;
+  line-height: 72px;
+  font-size: 20px;
 }
 .nav_list-item{
   font-size: 24px;
@@ -237,15 +240,31 @@ margin-left: 292px;
   margin-bottom: 16px;
 }
 .contact_list{
+  
   margin-left: 274px;
+  width: 100%;
 }
 .contact_list-item{
+  display: flex;
   margin-bottom: 16px;
+  width: 100%
 
 }
 .contact_list{
   list-style: none  ;
 }
+.contact-icon{
+  
+  width: 24px;
+}
+.contact-name{
+  
+  width: 72px
+}
+.contact-symbol{
+  width: 16px;
+}
+
 .footer{
   display: block;
   text-align: center;
@@ -300,7 +319,7 @@ margin-left: 292px;
     flex-direction: column;
     position: absolute;
     z-index: 3;
-    top: 44px;
+    top: 69px;
     right: -24px;
     display: none;
     width: 110px;
@@ -419,6 +438,17 @@ margin-left: 292px;
 .contact_list {
     margin-left: 92px;
 }
+.contact-icon{
+  
+  width: 19px;
+}
+.contact-name{
+  
+  width: 64px
+}
+.contact-symbol{
+  width: 12px;
+}
 .footer{
   height: 60px;
   padding-bottom: 20px;
@@ -449,7 +479,7 @@ margin-left: 292px;
     flex-direction: column;
     position: absolute;
     z-index: 3;
-    top: 39px;
+    top: 64px;
     right: -24px;
     display: none;
     width: 110px;
@@ -587,10 +617,27 @@ margin-left: 292px;
 .contact_list {
     margin-left: 40px;
 }
+.contact-icon{
+  
+  width: 18px;
+}
+.contact-name{
+  
+  width: 54px
+}
+.contact-symbol{
+  width: 12px;
+}
+.contact-info{
+  width: 260px;
+}
 .footer {
     height: 50px;
     padding-bottom: 50px;
-    margin-top: -12px;
+    margin-top: -10px;
+}
+.footer {
+  height: 60px;
 }
 .footer img {
     width: 20px;
@@ -598,5 +645,11 @@ margin-left: 292px;
 }
 .footer i {
     font-size: 22px;
+}
+.social{
+  margin-bottom: 6px;
+} 
+.social-icon{
+  padding-bottom: -10px;
 }
 }
