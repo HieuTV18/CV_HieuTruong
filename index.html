@@ -35,8 +35,8 @@
       <div class="avatar">
         <img class="avatar_img" src="./image/avatar.jpg" alt="">
         <div class="my_comment">
-          <h2>Hello, I'm Truong Van Hieu</h2>
-          <h4>Date of birth: Mar 1, 1995</h4>
+          <div class="cmt-heading">Hello, I'm Truong Van Hieu</div>
+          <div class="cmt-born">Date of birth: Mar 1, 1995</div>
 
         </div>
       </div>
@@ -195,6 +195,35 @@
       </div>
     </div>
     <script>
+
+      document.getElementById("nav_list-icon").onclick = function () {
+        document.getElementsByClassName("nav_list").style.display = "block";
+
+      }
+      document.getElementById("nav_home").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#48dacb";
+        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
+      }
+      document.getElementById("nav_resume").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_resume").style.backgroundColor = "#48dacb";
+        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
+      }
+      document.getElementById("nav_objective").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_objective").style.backgroundColor = "#48dacb";
+        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
+      }
+      document.getElementById("nav_contact").onclick = function () {
+        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
+        document.getElementById("nav_contact").style.backgroundColor = "#48dacb";
+      }
       document.getElementById("education").onclick = function () {
         document.getElementById("des_edu").style.display = "block";
         document.getElementById("des_history").style.display = "none";
@@ -238,33 +267,8 @@
         document.getElementById("skill").style.color = "white";
         document.getElementById("other").style.color = "black";
       }
-      document.getElementById("nav_home").onclick = function () {
-        document.getElementById("nav_home").style.backgroundColor = "#48dacb";
-        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
-      }
-      document.getElementById("nav_resume").onclick = function () {
-        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_resume").style.backgroundColor = "#48dacb";
-        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
-      }
-      document.getElementById("nav_objective").onclick = function () {
-        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_objective").style.backgroundColor = "#48dacb";
-        document.getElementById("nav_contact").style.backgroundColor = "#0cbfae";
-      }
-      document.getElementById("nav_contact").onclick = function () {
-        document.getElementById("nav_home").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_resume").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_objective").style.backgroundColor = "#0cbfae";
-        document.getElementById("nav_contact").style.backgroundColor = "#48dacb";
-      }
-      document.getElementById("nav_list-icon").onclick = function () {
-        document.getElementById("nav_lis").style.display = "block";
-      }
+
+
     </script>
 </body>
 
