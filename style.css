@@ -156,6 +156,7 @@ html{
 
 }
 .cv_content{
+  margin-left: -10px;
   background-color: #f4fdfc;
 }
 .section_heading{
@@ -474,6 +475,9 @@ margin-left: 292px;
     width: 100%;
     height: 40px;
   }
+  .cv_content{
+    margin-left: -20px;
+  }
   .header_logo{
     font-size: 16px;
     margin-left: 4px;
@@ -542,13 +546,13 @@ margin-left: 292px;
   .avatar_img{
     width: 104px;
     height: 104px;
-    left: 140px;
+    left: 166px;
   }
   .avatar .my_comment {
     position: absolute;
     z-index: 1;
-    bottom: 86px;
-    right: 6px;
+    bottom: 80px;
+    right: 10px;
     width: 164px;
     height: 48px;
     text-align: center;
@@ -576,11 +580,12 @@ margin-left: 292px;
   /* background-color: #fff; */
 }
 .slogan {
-    width: 294px;
-    left: 40px;
+    width: 332px;
+    left: 52px;
     font-size: 12px;
 }
 .section_heading {
+    width: 84%;
     margin-top: 56px;
     font-size: 18px;
     margin-bottom: 12px;
@@ -591,7 +596,7 @@ margin-left: 292px;
   padding-right: 8px;
 }
 .resume_list-item {
-    width: 116px;
+    width: 120px;
     font-size: 12px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -599,7 +604,7 @@ margin-left: 292px;
     margin-bottom: 16px;
 }
 .resume_item-icon{
-  margin-left: -8px;
+  margin-left: -6px;
   margin-right: -4px;
 }
 .resume_description p {
