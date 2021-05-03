@@ -7,7 +7,9 @@
 }
 html{
     scroll-behavior: smooth;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
     
 }
 .clear{
@@ -22,19 +24,20 @@ html{
 
 
 .app{
-  /* width: 1200px; */
   box-sizing: border-box;
+  max-width: 1280px;
+
 }
 .cv_header{
   position: fixed;
   display:  flex;
   z-index: 2;
-  width: 1200px;
+  width: 100vw;
   height: 72px; 
-  width: 100%;
   background-color:#0cbfae;
   justify-content: space-between;
   padding: 16px;
+  /* display: none; */
 
 }
 
@@ -98,14 +101,15 @@ html{
   position: relative;
 }
 .banner_img{
-  width: 1200px;
+  width: 100%;
+  
   height: 50%;
   opacity: 0.2;
 }
 .avatar_img{
   position: absolute;
   bottom: -20px;
-  left: 600px;
+  left: 47%;
   width: 180px;
   height: 180px;
   border: 5px solid #bee9e4;
@@ -115,9 +119,10 @@ html{
 .avatar .my_comment{
   position: absolute;
   z-index: 1;
-  bottom: 120px;
-  right: 228px;
-  width: 340px;
+  bottom: 150px;
+  /* right: 228px; */
+  right: 12%;
+  width: 30%;
   height: 80px;
   text-align: center;
   padding: 12px;
@@ -128,13 +133,14 @@ html{
 .slogan{
   position: absolute;
   bottom: -68px;
-  left: 450px;
-  width: 478px;
+  left: 24%;
+  width: 80%;
   height: 36px;
   /* border: 1px solid #2abeb0; */
   z-index: 1;
   font-size: 18px;
   color: #07a595;
+  
 }
 .my_comment::after{
   content: "";
@@ -370,7 +376,7 @@ margin-left: 292px;
   
 }
   .banner_img{
-    width: 90%;
+    width: 100%;
   }
   
   #nav_list-icon:hover{
@@ -385,14 +391,14 @@ margin-left: 292px;
 
   }
   .avatar_img{
-    left: 320px;
+    left: 44%;
   }
   .avatar .my_comment {
     position: absolute;
     z-index: 1;
-    bottom: 140px;
-    right: 56px;
-    width: 240px;
+    bottom: 154px;
+    right: 8%;
+    width: 32%;
     height: 60px;
     text-align: center;
     padding: 4px;
@@ -413,7 +419,8 @@ margin-left: 292px;
   border-width: 10px 16px;
 }
 .slogan{
-  left: 150px;
+  width: 80%;
+  left: 10%;
   font-size: 16px;
 }
 .section_heading{
@@ -546,13 +553,15 @@ margin-left: 292px;
   .avatar_img{
     width: 104px;
     height: 104px;
-    left: 166px;
+    /* left: 166px; */
+    left: 46%;
   }
   .avatar .my_comment {
     position: absolute;
     z-index: 1;
-    bottom: 80px;
-    right: 10px;
+    bottom: 84px;
+    /* right: 10px; */
+    right: 20%;
     width: 164px;
     height: 48px;
     text-align: center;
@@ -580,8 +589,8 @@ margin-left: 292px;
   /* background-color: #fff; */
 }
 .slogan {
-    width: 332px;
-    left: 52px;
+    width: 80%;
+    left: 10%;
     font-size: 12px;
 }
 .section_heading {
