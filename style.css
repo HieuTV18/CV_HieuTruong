@@ -23,16 +23,24 @@ html{
 }
 
 
-.app{
+.cv_app{
   box-sizing: border-box;
-  max-width: 1280px;
+  overflow-x: hidden;
+  /* max-width: 1280px; */
 
+}
+.cv_app_home{
+  
+  max-width: 100%;
 }
 .cv_header{
   position: fixed;
   display:  flex;
   z-index: 2;
-  width: 100vw;
+  /* width: 100%; */
+  width: 1280px;
+  max-width: 100%;
+
   height: 72px; 
   background-color:#0cbfae;
   justify-content: space-between;
@@ -49,7 +57,7 @@ html{
   background-color: #48dacb;
 }
 .header_logo{
-  display: flex;
+  
   align-items: center;
   font-size: 32px;
   margin-left: 24px;
@@ -97,11 +105,14 @@ html{
   color: #fff;
   padding: 16px;
 }
+
 .cv_banner{
   position: relative;
+
+
 }
 .banner_img{
-  width: 100%;
+  max-width: 100%;
   
   height: 50%;
   opacity: 0.2;
@@ -120,7 +131,6 @@ html{
   position: absolute;
   z-index: 1;
   bottom: 150px;
-  /* right: 228px; */
   right: 12%;
   width: 30%;
   height: 80px;
@@ -133,7 +143,7 @@ html{
 .slogan{
   position: absolute;
   bottom: -68px;
-  left: 24%;
+  left: 10%;
   width: 80%;
   height: 36px;
   /* border: 1px solid #2abeb0; */
@@ -164,6 +174,7 @@ html{
 .cv_content{
   margin-left: -10px;
   background-color: #f4fdfc;
+  /* padding-right: 223px; */
 }
 .section_heading{
   width: 80%;
@@ -228,6 +239,23 @@ html{
   display: inline-block;
   
 }
+/* progress */
+progress{
+  -webkit-appearance: none;
+  
+}
+progress[value]::-webkit-progress-bar{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 8px;
+  width: 200px;
+}
+::-webkit-progress-value{
+  background-color:#00a897;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .skill-value{
 
   margin-left: 4px;
@@ -331,7 +359,12 @@ margin-left: 292px;
     right: -24px;
     display: none;
     width: 110px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),   
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
 
     
   }
@@ -347,6 +380,7 @@ margin-left: 292px;
     
   }
   .nav_list-item-link:hover{
+
   font-size: 21px;
   color: rgb(243, 234, 109);
   transition: 0.4s;
@@ -482,6 +516,9 @@ margin-left: 292px;
     width: 100%;
     height: 40px;
   }
+  /* .cv_app_home{
+    padding-right: 30px;
+  } */
   .cv_content{
     margin-left: -20px;
   }
@@ -498,7 +535,12 @@ margin-left: 292px;
     right: -24px;
     display: none;
     width: 110px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+    overflow: hidden;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),   
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
 
     
   }
