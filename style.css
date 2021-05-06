@@ -57,7 +57,7 @@ html{
   background-color: #48dacb;
 }
 .header_logo{
-  
+  display: flex;
   align-items: center;
   font-size: 32px;
   margin-left: 24px;
